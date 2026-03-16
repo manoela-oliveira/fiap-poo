@@ -3,11 +3,13 @@ package br.com.fiapride.model;
 public class GuardaChuva {
     public String cor;
     public String material;
+    public double espacoOcupado;
     public boolean aberto;
     
     public GuardaChuva(String cor, String material){
         this.cor = cor;
         this.material = material;
+        this.espacoOcupado = 0.50;
         this.aberto = false;
     }
 
@@ -18,7 +20,8 @@ public class GuardaChuva {
         }
 
         this.aberto = true;
-        System.out.println("Você abriu o guarda-chuva " + cor + ".");
+        this.espacoOcupado = 1.10;
+        System.out.println("Você abriu o guarda-chuva " + cor + ". Agora ele ocupa um espaço de " + espacoOcupado + "m.");
     }
 
     public void fechar() {
@@ -28,6 +31,9 @@ public class GuardaChuva {
         }
 
         this.aberto = false;
-        System.out.println("Você fechou o guarda-chuva " + cor + ".");
+        this.espacoOcupado = 0.55;
+        System.out.println("Você fechou o guarda-chuva " + cor + ". Agora ele ocupa apenas " + espacoOcupado + "m.");
     }
+
+
 }
