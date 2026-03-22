@@ -2,7 +2,8 @@ package br.com.fiapride.main;
 
 import br.com.fiapride.model.Veiculo;
 
-public class principal {
+public class SistemaVeiculo {
+    
     public static void main(String[] args) {
         System.out.println("--- Sistema FiapRide ---");
 
