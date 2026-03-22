@@ -1,15 +1,57 @@
 package br.com.fiapride.model;
 
 public class Passageiro {
-    public String nome;
-    public String cpf;
-    public double saldo;
+    private String nome;
+    private String cpf;
+    private double saldo;
 
     public Passageiro(String nome, String cpf) {
-        this.nome = nome;
-        this.cpf = cpf;
-        this.saldo = 0.0;
+        this.setNome(nome);
+        this.setCpf(cpf);
+        this.setSaldo(0);
     }
+
+    public double getSaldo(){
+        return this.saldo;
+    }
+
+    private void setSaldo(double valor){
+        if (valor >= 0){
+            this.saldo = valor;
+        }
+        else {
+            System.out.println("Erro: Tentativa de definir saldo negativo bloqueada!");
+        }
+    }
+
+    public String getNome(){
+        return this.nome;
+    }
+
+    private void setNome(String nome) {
+        if (nome != null){
+        this.nome = nome;
+        }
+        else{
+            System.out.println("Erro: O espaço 'Nome' deve possuir ao menos 1 caracter válido");
+        }
+    }
+
+    public String getCpf(){
+        return this.cpf;
+    }
+
+    private void setCpf(String cpf){
+        if (cpf != null && cpf.length() >= 11){
+        this.cpf = cpf;
+        }
+        else{
+            System.out.println("Erro: Tentativa de definir valor inválido como CPF.");
+        }
+    } 
+
+
+
 
     public void adicionarSaldo(double valor) {
         if (valor <= 0) {
