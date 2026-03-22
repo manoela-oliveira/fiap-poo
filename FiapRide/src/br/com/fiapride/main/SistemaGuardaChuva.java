@@ -4,11 +4,15 @@ import br.com.fiapride.model.GuardaChuva;
 
 public class SistemaGuardaChuva {
 	public static void main(String[] args) {
-		GuardaChuva meuGuardaChuva = new GuardaChuva("Vinho", "Poliéster");
+		System.out.println("~~~ Sistema do meu amado guarda-chuva ~~~");
+
+		GuardaChuva meuGuardaChuva = new GuardaChuva("vinho", "poliéster");
+		System.out.println("\n>>>> Tentando abrir o guarda-chuva " + meuGuardaChuva.getCor());
 		meuGuardaChuva.abrir();
 		meuGuardaChuva.fechar();
 
-		GuardaChuva guardaChuvaDoProfessor = new GuardaChuva("Preto", "Plástico");
+		GuardaChuva guardaChuvaDoProfessor = new GuardaChuva("preto", "plástico");
+		System.out.println("\n>>>> Tentando fechar o guarda-chuva " + guardaChuvaDoProfessor.getCor());
 		guardaChuvaDoProfessor.fechar();
 
 	}
