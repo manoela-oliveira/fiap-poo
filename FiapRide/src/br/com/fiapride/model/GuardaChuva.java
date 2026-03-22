@@ -9,8 +9,8 @@ public class GuardaChuva {
     public GuardaChuva(String cor, String material){
         this.setCor(cor);
         this.setMaterial(material);
-        this.setEspacoOcupado(0.55);
-        this.setAberto(false);
+        this.espacoOcupado = 0.55;
+        this.aberto = true;
     }
 
     public String getCor(){
@@ -43,24 +43,11 @@ public class GuardaChuva {
         return this.espacoOcupado;
     }
 
-    private void setEspacoOcupado(double valor) {
-        if (valor > 0){
-        this.espacoOcupado = valor;
-        }
-        else{
-            System.out.println("Erro: Valor de espaço ocupado pelo objeto deve ser superior a zero.");
-        }
-    }
-
     public boolean getAberto(){
         return this.aberto;
     }
 
-    private void setAberto(boolean aberto) {
-        this.aberto = aberto;
-    }
-
-
+    
     public void abrir() {
         if (this.aberto) {
             System.out.println("Oops! Parece que o guarda-chuva "  + cor + " já está aberto!");
@@ -74,13 +61,13 @@ public class GuardaChuva {
 
     public void fechar() {
         if (!this.aberto) {
-            System.out.println("Oops! Parece que o guarda-chuva " + cor + " já está fechado!");
+            System.out.println("\nOops! Parece que o guarda-chuva " + cor + " já está fechado!");
             return;
         }
 
         this.aberto = false;
         this.espacoOcupado = 0.55;
-        System.out.println("Você fechou o guarda-chuva " + cor + ". Agora ele ocupa apenas " + espacoOcupado + "m.");
+        System.out.println("\nVocê fechou o guarda-chuva " + cor + ". Agora ele ocupa apenas " + espacoOcupado + "m.");
     }
 
 

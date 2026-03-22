@@ -4,7 +4,7 @@ import br.com.fiapride.model.GuardaChuva;
 
 public class SistemaGuardaChuva {
 	public static void main(String[] args) {
-		System.out.println("~~~ Sistema do meu amado guarda-chuva ~~~");
+		System.out.println("~~~ Sistema do Guarda-Chuva ~~~");
 
 		GuardaChuva meuGuardaChuva = new GuardaChuva("vinho", "poliéster");
 		System.out.println("\n>>>> Tentando abrir o guarda-chuva " + meuGuardaChuva.getCor());
