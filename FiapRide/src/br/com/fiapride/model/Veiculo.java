@@ -11,20 +11,30 @@ public class Veiculo {
 		this.setGasolina(0);
     }
 
-	 public String getProprietario() {
+	public String getProprietario() {
 		return this.proprietario;
 	}
 
-	private void setProprietario(String valor) {
-        this.placa = proprietario;
+	private void setProprietario(String proprietario) {
+        if (proprietario != null){
+        this.proprietario = proprietario;
+        }
+        else{
+            System.out.println("Erro: O espaço 'Proprietário' deve conter ao menos 1 caracter válido.");
+        }
 	}
 
 	public String getPlaca() {
 		return this.placa;
 	}
 
-	private void setPlaca(String valor) {
-        this.placa = valor;
+	private void setPlaca(String placa) {
+        if (placa != null){
+            this.placa = placa;
+        }
+        else{
+            System.out.println("Erro: O espaço 'Placa' deve conter ao menos 1 caracter válido.");
+        }
 	}
 
 	public double getGasolina() {
@@ -44,7 +54,7 @@ public class Veiculo {
         }
 
         this.gasolina += valor;
-        System.out.println("Abastecimento realizado com sucesso! Você possui agora" + this.gasolina + " litros de gasolina em seu tanque.");
+        System.out.println("Abastecimento realizado com sucesso! Você possui agora " + this.gasolina + " litros de gasolina em seu tanque.");
     }
     
     public void consumirGasolina(double gasto) {
@@ -54,7 +64,7 @@ public class Veiculo {
         }
 
         if (this.gasolina < gasto) {
-            System.out.println("Erro: Quantidade de gasolina no tanque insuficiente para seu passeio. O percurso consumiria cerca de" + gasto + " e você tem somente " + this.gasolina + " litros de gasolina disponíveis no tanque.");
+            System.out.println("Erro: Quantidade de gasolina no tanque insuficiente para seu passeio. O percurso consumiria cerca de " + gasto + " litros e você tem somente " + this.gasolina + " litros de gasolina disponíveis no tanque.");
             return;
         }
 
