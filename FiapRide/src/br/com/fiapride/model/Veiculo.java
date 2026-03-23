@@ -8,7 +8,7 @@ public class Veiculo {
     public Veiculo(String proprietario, String placa) {
         this.setProprietario(proprietario);
 		this.setPlaca(placa);
-		this.setGasolina(0);
+		this.gasolina = 0;
     }
 
 	public String getProprietario() {
@@ -36,15 +36,10 @@ public class Veiculo {
             System.out.println("Erro: O espaço 'Placa' deve conter ao menos 1 caracter válido.");
         }
 	}
-
-	public double getGasolina() {
-		return this.gasolina;
-	}
-
-	public void setGasolina(double valor) {
-        this.gasolina = valor;
-	}
-
+    
+    public double getGasolina() {
+        return gasolina;
+    }
 
     public void adicionarGasolina(double valor) {
         if (valor <= 0) {
@@ -69,7 +64,7 @@ public class Veiculo {
         }
 
         this.gasolina -= gasto;
-        System.out.println("Resolveu dar uma voltinha? Até o momento, você gastou " + this.gasolina + "litros de gasolina.");
+        System.out.println("Resolveu dar uma voltinha? Até o momento, você consumiu " + this.gasolina + "litros de gasolina.");
     }
 
    

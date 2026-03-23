@@ -13,6 +13,6 @@ public class SistemaVeiculo {
         veiculo1.consumirGasolina(100);
 
         System.out.println("\n>>>> Status do veículo:");
-        System.out.println("Proprietário: " + veiculo1.getProprietario() + " | Placa: " + veiculo1.getPlaca() + " | Gasolina: " + veiculo1.getGasolina() + "l");
+        System.out.println("Proprietário: " + veiculo1.getProprietario() + " | Placa: " + veiculo1.getPlaca() + " | Gasolina: " + veiculo1.getGasolina() + " litros");
     }
 }
