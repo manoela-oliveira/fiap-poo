@@ -2,10 +2,6 @@
 
 > **Checkpoint 1 - 23/03/2026**  
 > **Professor:** Ygor Moraes Martins dos Anjos
-
-**Aluno:** [Manoela Oliveira Bello]
-**RM:** 563952
-
 ---
 
 ## Sobre as atividades
