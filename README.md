@@ -1,12 +1,11 @@
 # Exercícios POO - Progamação Orientada a Objeto
 
-> **Checkpoint 1 - 23/03/2026**  
 > **Professor:** Ygor Moraes Martins dos Anjos
 ---
 
 ## Sobre as atividades
 
-Conforme orientado, cerca de três sistemas para praticar conceitos iniciais, como:
+Conforme orientado, cerca de três sistemasforamcriados para praticar conceitos iniciais de programação orientada a objeto, como:
 - CLasses
 - Objetos
 - Memória
@@ -15,4 +14,4 @@ Conforme orientado, cerca de três sistemas para praticar conceitos iniciais, co
 - Encapsulamento
 - Construtores
 
-Contemplando, desde as primeiras etapas do projeto, práticas de Clean Code.
+Contemplando, desde as primeiras etapas, práticas de Clean Code.

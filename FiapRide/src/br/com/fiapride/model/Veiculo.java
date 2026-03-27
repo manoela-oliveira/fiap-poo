@@ -11,7 +11,7 @@ public class Veiculo {
     private double gasolina;
     private String modelo; //Modelo do carro é omutável na vida real, logo, não receberá setter
 
-    public Veiculo(String proprietario, String placa) {
+    public Veiculo(String proprietario, String placa, String modelo) {
         this.setProprietario(proprietario);
 		this.setPlaca(placa);
 		this.setGasolina(0.0);
@@ -52,7 +52,11 @@ public class Veiculo {
             System.out.println("Erro: A placa informada possui um valor inválido.");
         }
 	}
-    
+
+    public String getModelo() {
+        return this.modelo;
+    }
+
     public double getGasolina() {
         return this.gasolina;
     }
