@@ -9,11 +9,14 @@ public class Veiculo {
     private String proprietario;
     private String placa;
     private double gasolina;
+    private String modelo; //Modelo do carro é omutável na vida real, logo, não receberá setter
 
     public Veiculo(String proprietario, String placa) {
         this.setProprietario(proprietario);
 		this.setPlaca(placa);
 		this.setGasolina(0.0);
+        this.modelo = modelo;
+        System.out.println(" Registro inicial: O carro " + this.modelo + " foi criado com a placa " + this.placa);
     }
     /* Aplicando padrão de nomeclatura getter"CamelCase e tornando-o público
        De: private get_individuo
@@ -35,12 +38,18 @@ public class Veiculo {
 		return this.placa;
 	}
 
-	private void setPlaca(String placa) {
-        if (placa != null){
-            this.placa = placa;
+    public void atualizarPlaca(String novaPlaca){
+        System.out.println(" Solicitada atualização de placa no Detran para o veículo " + this.modelo + "...");
+        this.setPlaca(novaPlaca);
+    }
+
+	private void setPlaca(String novaPlaca) {
+        if (novaPlaca != null && !novaPlaca.trim().isEmpty()) {
+            this.placa = novaPlaca;
+            System.out.println(" A placa registrada atualmente é " + this.placa);
         }
         else{
-            System.out.println("Erro: O espaço 'Placa' deve conter ao menos 1 caracter válido.");
+            System.out.println("Erro: A placa informada possui um valor inválido.");
         }
 	}
     
