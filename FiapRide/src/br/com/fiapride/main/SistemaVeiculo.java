@@ -1,6 +1,8 @@
 package br.com.fiapride.main;
 
+import br.com.fiapride.model.Passageiro;
 import br.com.fiapride.model.Veiculo;
+import br.com.fiapride.model.Viagem;
 // Alterando nomeclatura da classe a fim de facilitar identificação
 public class SistemaVeiculo {
     
@@ -18,5 +20,13 @@ public class SistemaVeiculo {
 
         System.out.println("\n>>>> Status do veículo:");
         System.out.println("Proprietário: " + veiculo1.getProprietario() + " | Placa: " + veiculo1.getPlaca() + " | Modelo:" + veiculo1.getModelo() + " | Gasolina: " + veiculo1.getGasolina() + " litros");
+        
+        //Testando associação
+        Passageiro ana = new Passageiro("Ana Silva", "222.222.222-22");
+        Veiculo carroDoJoao = new Veiculo("Carlos","ABC-1234", "Toyota Corolla");
+        Viagem viagemDaAna = new Viagem("Avenida Paulista, 1000", ana, carroDoJoao);
+        viagemDaAna.exibirResumo();
+        ana.adicionarSaldo(50.0);
+        System.out.println("Saldo da Ana consultado ATRAVÉS da Viagem: R$ " + viagemDaAna.getSolicitante().getSaldo());
     }
 }

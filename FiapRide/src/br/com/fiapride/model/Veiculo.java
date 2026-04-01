@@ -9,7 +9,7 @@ public class Veiculo {
     private String proprietario;
     private String placa;
     private double gasolina;
-    private String modelo; //Modelo do carro é omutável na vida real, logo, não receberá setter
+    private String modelo; //Modelo do carro é imutável na vida real, logo, não receberá setter
 
     public Veiculo(String proprietario, String placa, String modelo) {
         this.setProprietario(proprietario);
@@ -18,7 +18,7 @@ public class Veiculo {
         this.modelo = modelo;
         System.out.println(" Registro inicial: O carro " + this.modelo + " foi criado com a placa " + this.placa);
     }
-    /* Aplicando padrão de nomeclatura getter"CamelCase e tornando-o público
+    /* Aplicando padrão de nomeclatura getter "CamelCase" e tornando-o público
        De: private get_individuo
        Para: public String getProprietario */
 	public String getProprietario() {
