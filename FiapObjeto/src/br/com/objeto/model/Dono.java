@@ -1,4 +1,4 @@
-package br.com.fiapride.model;
+package br.com.objeto.model;
 
 public class Dono {
     private String nome;

@@ -1,4 +1,4 @@
-package br.com.fiapride.model;
+package br.com.objeto.model;
 
 public class Capa { // Interprete como uma capa personalizada que será comprada para envolver o guarda-chuva
     private String estampa;
