@@ -1,8 +1,8 @@
-package br.com.objeto.main;
+package br.com.objetoteste.main;
 
-import br.com.objeto.model.Capa;
-import br.com.objeto.model.Dono;
-import br.com.objeto.model.GuardaChuva;
+import br.com.objetoteste.model.Capa;
+import br.com.objetoteste.model.Dono;
+import br.com.objetoteste.model.GuardaChuva;
 
 public class SistemaGuardaChuva {
 	public static void main(String[] args) {

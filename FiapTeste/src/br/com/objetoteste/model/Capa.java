@@ -1,4 +1,4 @@
-package br.com.objeto.model;
+package br.com.objetoteste.model;
 
 public class Capa { // Interprete como uma capa personalizada que será comprada para envolver o guarda-chuva
     private String estampa;

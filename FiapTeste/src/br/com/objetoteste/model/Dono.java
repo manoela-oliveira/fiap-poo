@@ -1,4 +1,4 @@
-package br.com.objeto.model;
+package br.com.objetoteste.model;
 
 public class Dono {
     private String nome;

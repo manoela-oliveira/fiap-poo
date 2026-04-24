@@ -3,9 +3,8 @@ package br.com.fiapride.model;
 public class Carro extends Veiculo {
     private int capacidadePassageiros;
 
-    public Carro(String placa, String modelo, int capacidadePassageiros) {
-        super(placa, modelo);
-
+    public Carro(String proprietario, String placa, String modelo, int capacidadePassageiros) {
+        super(proprietario, placa, modelo);
         this.setCapacidadePassageiros(capacidadePassageiros);
     }
 
